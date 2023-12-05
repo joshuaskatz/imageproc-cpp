@@ -1,0 +1,3 @@
+/Users/joshkatz/cpp/build/CMakeFiles/imageproc.dir
+/Users/joshkatz/cpp/build/CMakeFiles/edit_cache.dir
+/Users/joshkatz/cpp/build/CMakeFiles/rebuild_cache.dir
