@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/joshkatz/cpp/src/Image.cpp" "CMakeFiles/imageproc.dir/src/Image.cpp.o" "gcc" "CMakeFiles/imageproc.dir/src/Image.cpp.o.d"
+  "/Users/joshkatz/cpp/src/Processing.cpp" "CMakeFiles/imageproc.dir/src/Processing.cpp.o" "gcc" "CMakeFiles/imageproc.dir/src/Processing.cpp.o.d"
   "/Users/joshkatz/cpp/src/main.cpp" "CMakeFiles/imageproc.dir/src/main.cpp.o" "gcc" "CMakeFiles/imageproc.dir/src/main.cpp.o.d"
   )
 

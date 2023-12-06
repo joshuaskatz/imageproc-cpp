@@ -360,5 +360,10 @@ CMakeFiles/imageproc.dir/src/Image.cpp.o: \
   /opt/homebrew/Cellar/opencv/4.8.1_5/include/opencv4/opencv2/video.hpp \
   /opt/homebrew/Cellar/opencv/4.8.1_5/include/opencv4/opencv2/video/tracking.hpp \
   /opt/homebrew/Cellar/opencv/4.8.1_5/include/opencv4/opencv2/video/background_segm.hpp \
-  /Users/joshkatz/cpp/src/Image.h /Users/joshkatz/cpp/src/stb_image.h \
-  /Users/joshkatz/cpp/src/stb_image_write.h
+  /opt/homebrew/include/tiffio.h /opt/homebrew/include/tiff.h \
+  /opt/homebrew/include/tiffconf.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/inttypes.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/inttypes.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/inttypes.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/xlocale/_inttypes.h \
+  /opt/homebrew/include/tiffvers.h /Users/joshkatz/cpp/src/Image.h

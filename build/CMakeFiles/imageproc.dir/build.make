@@ -83,10 +83,24 @@ CMakeFiles/imageproc.dir/src/Image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imageproc.dir/src/Image.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshkatz/cpp/src/Image.cpp -o CMakeFiles/imageproc.dir/src/Image.cpp.s
 
+CMakeFiles/imageproc.dir/src/Processing.cpp.o: CMakeFiles/imageproc.dir/flags.make
+CMakeFiles/imageproc.dir/src/Processing.cpp.o: /Users/joshkatz/cpp/src/Processing.cpp
+CMakeFiles/imageproc.dir/src/Processing.cpp.o: CMakeFiles/imageproc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joshkatz/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/imageproc.dir/src/Processing.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imageproc.dir/src/Processing.cpp.o -MF CMakeFiles/imageproc.dir/src/Processing.cpp.o.d -o CMakeFiles/imageproc.dir/src/Processing.cpp.o -c /Users/joshkatz/cpp/src/Processing.cpp
+
+CMakeFiles/imageproc.dir/src/Processing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imageproc.dir/src/Processing.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joshkatz/cpp/src/Processing.cpp > CMakeFiles/imageproc.dir/src/Processing.cpp.i
+
+CMakeFiles/imageproc.dir/src/Processing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imageproc.dir/src/Processing.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joshkatz/cpp/src/Processing.cpp -o CMakeFiles/imageproc.dir/src/Processing.cpp.s
+
 CMakeFiles/imageproc.dir/src/main.cpp.o: CMakeFiles/imageproc.dir/flags.make
 CMakeFiles/imageproc.dir/src/main.cpp.o: /Users/joshkatz/cpp/src/main.cpp
 CMakeFiles/imageproc.dir/src/main.cpp.o: CMakeFiles/imageproc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joshkatz/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/imageproc.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/joshkatz/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/imageproc.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imageproc.dir/src/main.cpp.o -MF CMakeFiles/imageproc.dir/src/main.cpp.o.d -o CMakeFiles/imageproc.dir/src/main.cpp.o -c /Users/joshkatz/cpp/src/main.cpp
 
 CMakeFiles/imageproc.dir/src/main.cpp.i: cmake_force
@@ -100,12 +114,14 @@ CMakeFiles/imageproc.dir/src/main.cpp.s: cmake_force
 # Object files for target imageproc
 imageproc_OBJECTS = \
 "CMakeFiles/imageproc.dir/src/Image.cpp.o" \
+"CMakeFiles/imageproc.dir/src/Processing.cpp.o" \
 "CMakeFiles/imageproc.dir/src/main.cpp.o"
 
 # External object files for target imageproc
 imageproc_EXTERNAL_OBJECTS =
 
 imageproc: CMakeFiles/imageproc.dir/src/Image.cpp.o
+imageproc: CMakeFiles/imageproc.dir/src/Processing.cpp.o
 imageproc: CMakeFiles/imageproc.dir/src/main.cpp.o
 imageproc: CMakeFiles/imageproc.dir/build.make
 imageproc: /opt/homebrew/lib/libopencv_gapi.4.8.1.dylib
@@ -143,6 +159,8 @@ imageproc: /opt/homebrew/lib/libopencv_wechat_qrcode.4.8.1.dylib
 imageproc: /opt/homebrew/lib/libopencv_xfeatures2d.4.8.1.dylib
 imageproc: /opt/homebrew/lib/libopencv_xobjdetect.4.8.1.dylib
 imageproc: /opt/homebrew/lib/libopencv_xphoto.4.8.1.dylib
+imageproc: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
+imageproc: /opt/homebrew/lib/libtiff.dylib
 imageproc: /opt/homebrew/lib/libopencv_shape.4.8.1.dylib
 imageproc: /opt/homebrew/lib/libopencv_highgui.4.8.1.dylib
 imageproc: /opt/homebrew/lib/libopencv_datasets.4.8.1.dylib
@@ -163,8 +181,10 @@ imageproc: /opt/homebrew/lib/libopencv_flann.4.8.1.dylib
 imageproc: /opt/homebrew/lib/libopencv_photo.4.8.1.dylib
 imageproc: /opt/homebrew/lib/libopencv_imgproc.4.8.1.dylib
 imageproc: /opt/homebrew/lib/libopencv_core.4.8.1.dylib
+imageproc: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
+imageproc: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 imageproc: CMakeFiles/imageproc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/joshkatz/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable imageproc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/joshkatz/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable imageproc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imageproc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

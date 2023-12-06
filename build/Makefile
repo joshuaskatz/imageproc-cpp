@@ -153,6 +153,30 @@ src/Image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageproc.dir/build.make CMakeFiles/imageproc.dir/src/Image.cpp.s
 .PHONY : src/Image.cpp.s
 
+src/Processing.o: src/Processing.cpp.o
+.PHONY : src/Processing.o
+
+# target to build an object file
+src/Processing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageproc.dir/build.make CMakeFiles/imageproc.dir/src/Processing.cpp.o
+.PHONY : src/Processing.cpp.o
+
+src/Processing.i: src/Processing.cpp.i
+.PHONY : src/Processing.i
+
+# target to preprocess a source file
+src/Processing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageproc.dir/build.make CMakeFiles/imageproc.dir/src/Processing.cpp.i
+.PHONY : src/Processing.cpp.i
+
+src/Processing.s: src/Processing.cpp.s
+.PHONY : src/Processing.s
+
+# target to generate assembly for a file
+src/Processing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageproc.dir/build.make CMakeFiles/imageproc.dir/src/Processing.cpp.s
+.PHONY : src/Processing.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/Image.o"
 	@echo "... src/Image.i"
 	@echo "... src/Image.s"
+	@echo "... src/Processing.o"
+	@echo "... src/Processing.i"
+	@echo "... src/Processing.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

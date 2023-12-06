@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/imageproc.dir/src/Image.cpp.o"
   "CMakeFiles/imageproc.dir/src/Image.cpp.o.d"
+  "CMakeFiles/imageproc.dir/src/Processing.cpp.o"
+  "CMakeFiles/imageproc.dir/src/Processing.cpp.o.d"
   "CMakeFiles/imageproc.dir/src/main.cpp.o"
   "CMakeFiles/imageproc.dir/src/main.cpp.o.d"
   "imageproc"

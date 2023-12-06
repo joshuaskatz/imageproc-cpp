@@ -81,12 +81,12 @@ clean: CMakeFiles/imageproc.dir/clean
 CMakeFiles/imageproc.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageproc.dir/build.make CMakeFiles/imageproc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imageproc.dir/build.make CMakeFiles/imageproc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/joshkatz/cpp/build/CMakeFiles --progress-num=1,2,3 "Built target imageproc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/joshkatz/cpp/build/CMakeFiles --progress-num=1,2,3,4 "Built target imageproc"
 .PHONY : CMakeFiles/imageproc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/imageproc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joshkatz/cpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joshkatz/cpp/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/imageproc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joshkatz/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/imageproc.dir/rule
