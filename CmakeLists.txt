@@ -10,14 +10,31 @@ set(EXEC imageproc)
 # set the C++14 standard
 set(CMAKE_CXX_STANDARD 14)
 
-# I../includes
+# Include directories
 include_directories(includes)
 
+# Find OpenCV package
 find_package(OpenCV REQUIRED)
+# Include directories for OpenCV
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+# Find Qt5 package with Widgets module
+find_package(Qt6 COMPONENTS Widgets REQUIRED)  # Simplified Qt5 find_package
+
+# Find LibTIFF
+find_package(TIFF REQUIRED)
+if (TIFF_FOUND)
+    include_directories(${TIFF_INCLUDE_DIR})
+    message(STATUS "Found LibTIFF: ${TIFF_INCLUDE_DIR}")
+else ()
+    message(FATAL_ERROR "LibTIFF not found.")
+endif ()
 
 # puts all .cpp files inside src to the SOURCES variable
 file(GLOB SOURCES src/*.cpp)
 
-# compiles the files defined by SOURCES to generante the executable defined by EXEC
+# compiles the files defined by SOURCES to generate the executable defined by EXEC
 add_executable(${EXEC} ${SOURCES})
-target_link_libraries(imageproc ${OpenCV_LIBS})
+
+# Link the executable with OpenCV, Qt6, and LibTIFF libraries
+target_link_libraries(${EXEC} ${OpenCV_LIBS} Qt6::Widgets ${TIFF_LIBRARIES})

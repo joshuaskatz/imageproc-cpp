@@ -1,16 +1,16 @@
 #include <stdint.h>
+#include <tiffio.h>
 
 #include <cstdio>
+#include <opencv2/opencv.hpp>
+using namespace cv;
 
-enum ImageType { PNG, JPG, BMP, TGA };
+enum ImageType { PNG, JPG, TIF };
 
 struct Image {
- public:
-  uint8_t *data = NULL;
-  size_t size = 0;
-  int w;
-  int h;
-  int channels;
+  Mat data;
+  int w, h, channels;
+  size_t size;
 
   Image(const char *filename);
   Image(int w, int h, int channels);
@@ -19,12 +19,8 @@ struct Image {
   ~Image();
 
   bool read(const char *filename);
+
   bool write(const char *filename);
 
   ImageType get_file_type(const char *filename);
-
-  void invert_image();
-  void white_balance();
-  void adjust_by_channel(float red_scale, float green_scale, float blue_scale);
-  void warm_up(float strength);
 };
